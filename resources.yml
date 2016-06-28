@@ -34,3 +34,9 @@ resources:
     source:
       params:
         foo: "bar"
+  
+  - name: tri-docker-opts
+    type: dockerOptions
+    source:
+      memory: 128
+      cpu-shares: 32
