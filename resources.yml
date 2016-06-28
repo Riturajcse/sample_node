@@ -39,4 +39,4 @@ resources:
     type: dockerOptions
     source:
       memory: 128
-      cpu-shares: 5
+      cpu-shares: 64
