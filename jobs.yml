@@ -2,8 +2,9 @@ jobs:
   - name: tri-manifest
     type: manifest
     steps:
-      - GET: tri-nodenv
+      - GET: tri-redis
       - GET: tri-params
+      - GET: tri-docker-options
 
   - name: tri-deploy
     type: tripubDeploy
