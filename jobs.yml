@@ -1,6 +1,12 @@
-jobs :
-  - name : job1
-    type : build
-    steps :
-      - GET resource1
-      - PUT resource1
+jobs:
+  - name: tri-manifest
+    type: manifest
+    steps:
+      - GET: tri-nginx
+
+  - name: tri-deploy
+    type: tripubDeploy
+    steps:
+      - GET: tri-manifest
+      - GET: tri-cluster
+    
