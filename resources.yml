@@ -46,5 +46,5 @@ resources:
   - name: tri-docker-opts
     type: dockerOptions
     source:
-      memory: 512
-      publishAllPorts: true
+      memory: 128
+      publishAllPorts: false
