@@ -2,7 +2,7 @@ jobs:
   - name: tri-manifest
     type: manifest
     steps:
-      - GET: tri-redis
+      - GET: tri-nginx
 
   - name: tri-deploy
     type: tripubDeploy
