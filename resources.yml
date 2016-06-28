@@ -1,22 +1,22 @@
 resources:
   - name: tri-nginx
     type: image
-    integration: scriptnull-docker
+    integration: jatin-docker
     source:
       name: "library/nginx"
       isPull: false
       tag: latest
       
-  - name: tri-sn
+  - name: tri-redis
     type: image
-    integration: scriptnull-docker
+    integration: jatin-docker
     source:
-      name: "scriptnull/sample_node"
+      name: "jatindogra/redis"
       isPull: false
-      tag: "dc.pipeline.3"
+      tag: "latest"
 
   - name: tri-cluster
     type: tripubCluster
-    integration: scriptnull-triton
+    integration: jatin-triton
     source:
       region: "us-east-1"
