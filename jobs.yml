@@ -3,6 +3,7 @@ jobs:
     type: manifest
     steps:
       - GET: tri-redis
+      - GET: tri-params
 
   - name: tri-deploy
     type: tripubDeploy
