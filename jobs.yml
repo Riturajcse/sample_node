@@ -4,7 +4,7 @@ jobs:
     steps:
       - GET: tri-redis
       - GET: tri-params
-      - GET: tri-docker-options
+      - GET: tri-docker-opts
 
   - name: tri-deploy
     type: tripubDeploy
