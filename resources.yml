@@ -15,6 +15,14 @@ resources:
       isPull: false
       tag: "latest"
   
+  - name: tri-sn
+    type: image
+    integration: jatin-docker
+    source:
+      name: "scriptnull/sample_node"
+      isPull: false
+      tag: "dc.pipeline.3"
+  
   - name: tri-nodenv
     type: image
     integration: jatin-docker
