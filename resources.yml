@@ -20,3 +20,9 @@ resources:
     integration: jatin-triton
     source:
       region: "us-east-1"
+  
+  - name: tri-params
+    type: params
+    source:
+      params:
+        foo: "bar"
