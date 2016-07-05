@@ -2,7 +2,7 @@ jobs:
   - name: ecs-man
     type: manifest
     steps:
-      - GET: ecs-nfinx
+      - GET: ecs-nginx
 
   - name: ecs-upgrade-new-deploy
     type: ecsDeploy
