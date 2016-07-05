@@ -2,12 +2,12 @@ jobs:
   - name: ecs-man
     type: manifest
     steps:
-      - GET: ecs-sn
+      - GET: ecs-nginx
 
-  - name: ecs-jatin-bluegreen-deploy
+  - name: ecs-bluegreen-new-deploy
     type: ecsDeploy
     options:
-      deployMethod: upgrade
+      deployMethod: blueGreen
     steps:
       - GET: ecs-man
       - GET: ecs-cluster
