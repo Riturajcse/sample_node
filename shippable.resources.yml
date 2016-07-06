@@ -33,7 +33,7 @@ resources:
 
   - name: tri-cluster
     type: tripubCluster
-    integration: jatin-tritonV2
+    integration: jatin-triton
     source:
       region: "us-east-1"
   
