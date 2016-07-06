@@ -4,7 +4,7 @@ jobs:
     steps:
       - GET: ecs-sn
 
-  - name: ecs-upgrade-new-deploy
+  - name: ecs-upgrade-deploy
     type: ecsDeploy
     options:
       deployMethod: upgrade
