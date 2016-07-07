@@ -2,6 +2,7 @@ jobs:
   - name: tri-manifest
     type: manifest
     steps:
+      - GET: triggertest1
       - GET: tri-sn
       - GET: tri-params
       - GET: tri-docker-opts
