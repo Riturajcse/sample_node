@@ -12,6 +12,7 @@ jobs:
     options:
       deployMethod: blueGreen
     steps:
+      - GET: triggertest1
       - GET: tri-manifest
       - GET: tri-cluster
     
