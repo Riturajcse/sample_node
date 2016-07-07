@@ -7,11 +7,18 @@ jobs:
       - GET: tri-docker-opts
       - GET: triggertest1
 
-  - name: tri-deploy-1
+  # - name: tri-deploy-1
+  #   type: tripubDeploy
+  #   options:
+  #     deployMethod: blueGreen
+  #   steps:
+  #     - GET: tri-manifest
+  #     - GET: tri-cluster
+
+  - name: tri-deploy-2
     type: tripubDeploy
     options:
-      deployMethod: blueGreen
+      deployMethod: upgrade
     steps:
       - GET: tri-manifest
       - GET: tri-cluster
-    
