@@ -2,17 +2,16 @@ jobs:
   - name: tri-manifest
     type: manifest
     steps:
-      - GET: triggertest1
       - GET: tri-sn
       - GET: tri-params
       - GET: tri-docker-opts
+      - GET: triggertest1
 
   - name: tri-deploy-1
     type: tripubDeploy
     options:
       deployMethod: blueGreen
     steps:
-      - GET: triggertest1
       - GET: tri-manifest
       - GET: tri-cluster
     
