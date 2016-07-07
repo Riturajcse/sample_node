@@ -2,7 +2,7 @@ triggers:
   - name: triggertest1
     type: trigger
     source:
-      message: 'testing trigger yml'
+      message: 'testing trigger in yml'
       
   - name: triggertest2
     type: trigger
