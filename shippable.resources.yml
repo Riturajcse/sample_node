@@ -41,7 +41,7 @@ resources:
     type: params
     source:
       params:
-        foo: "bar"
+        foo: "boo"
   
   - name: tri-docker-opts
     type: dockerOptions
