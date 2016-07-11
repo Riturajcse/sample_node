@@ -18,7 +18,7 @@ resources:
   - name: image-opts
     type: dockerOptions
     source:
-      memory: 64
+      memory: 128
       cpu-shares: 512
 
   - name: gke-cluster
