@@ -17,7 +17,7 @@ resources:
 
   - name: gke-cluster
     type: gkeCluster
-    integration: gke-int
+    integration: jatin-gke
     source:
       name: "pipeline-cluster" #name of the cluster we are deploying.
       region: "us-east1-d"
