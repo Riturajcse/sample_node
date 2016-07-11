@@ -1,0 +1,13 @@
+jobs:
+  - name: gke-man
+    type: manifest
+    steps:
+      - GET: gke-sn
+
+  - name: gke-upgrade-deploy
+    type: gkeDeploy
+    options:
+      deployMethod: upgrade
+    steps:
+      - GET: gke-man
+      - GET: gke-cluster
