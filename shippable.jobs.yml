@@ -3,6 +3,7 @@ jobs:
     type: manifest
     steps:
       - GET: gke-sn
+      - GET: trigger-gke-man
 
   - name: gke-upgrade-deploy
     type: gkeDeploy
