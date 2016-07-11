@@ -15,6 +15,12 @@ resources:
       isPull: false
       tag: "dc.pipeline.3"
 
+  - name: image-opts
+    type: dockerOptions
+    source:
+      memory: 64
+      cpu-shares: 512
+
   - name: gke-cluster
     type: gkeCluster
     integration: jatin-gke
