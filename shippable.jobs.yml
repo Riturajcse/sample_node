@@ -3,7 +3,7 @@ jobs:
     type: manifest
     steps:
       - GET: gke-sn
-      - GET: img-opts
+      - GET: image-opts
       - GET: trigger-gke-man
 
   - name: gke-upgrade-deploy
