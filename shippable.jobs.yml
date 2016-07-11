@@ -2,7 +2,7 @@ jobs:
   - name: gke-man
     type: manifest
     steps:
-      - GET: gke-nginx
+      - GET: gke-sn
       - GET: trigger-gke-man
 
   - name: gke-upgrade-deploy
