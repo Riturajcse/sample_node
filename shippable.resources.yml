@@ -1,0 +1,23 @@
+resources:
+  - name: ecs-nginx
+    type: image
+    integration: jatin-docker
+    source:
+      name: "library/nginx"
+      isPull: false
+      tag: latest
+      
+  - name: ecs-sn
+    type: image
+    integration: jatin-docker
+    source:
+      name: "scriptnull/sample_node"
+      isPull: false
+      tag: "dc.pipeline.3"
+
+  - name: gke-cluster
+    type: gkeCluster
+    integration: gke-int
+    source:
+      name: "pipeline-cluster" #name of the cluster we are deploying.
+      region: "us-east1-d"
