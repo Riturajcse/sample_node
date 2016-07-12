@@ -6,7 +6,7 @@ jobs:
       - GET: image-opts
       - GET: trigger-gke-man
 
-  - name: gke-upgrade-deploy
+  - name: gke-beta-deploy
     type: gkeDeploy
     options:
       deployMethod: upgrade
