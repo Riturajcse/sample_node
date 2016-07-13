@@ -2,14 +2,14 @@ jobs:
   - name: gke-man
     type: manifest
     steps:
-      - GET: gke-sn
+      - GET: gke-nginx
       - GET: image-opts
       - GET: trigger-gke-man
 
-  - name: gke-deploy-1
+  - name: gke-deploy-2
     type: gkeDeploy
     options:
-      deployMethod: upgrade
+      deployMethod: blueGreen
     steps:
       - GET: gke-man
       - GET: gke-cluster
