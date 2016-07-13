@@ -9,7 +9,7 @@ jobs:
   - name: gke-upgrade-deploy
     type: gkeDeploy
     options:
-      deployMethod: upgrade
+      deployMethod: bluegreen
     steps:
       - GET: gke-man
       - GET: gke-cluster
