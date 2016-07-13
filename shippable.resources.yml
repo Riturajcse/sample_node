@@ -1,0 +1,29 @@
+resources:
+  - name: gke-nginx
+    type: image
+    integration: jatin-docker
+    source:
+      name: "library/nginx"
+      isPull: false
+      tag: latest
+
+  - name: gke-sn
+    type: image
+    integration: jatin-docker
+    source:
+      name: "scriptnull/sample_node"
+      isPull: false
+      tag: "dc.pipeline.3"
+
+  - name: image-opts
+    type: dockerOptions
+    source:
+      memory: 128
+      cpu-shares: 512
+
+  - name: gke-cluster
+    type: gkeCluster
+    integration: jatin-gke
+    source:
+      name: "pipeline-cluster" #name of the cluster we are deploying.
+      region: "us-east1-d"

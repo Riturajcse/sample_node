@@ -1,0 +1,15 @@
+jobs:
+  - name: gke-man
+    type: manifest
+    steps:
+      - GET: gke-nginx
+      - GET: image-opts
+      - GET: trigger-gke-man
+
+  - name: gke-upgrade-deploy
+    type: gkeDeploy
+    options:
+      deployMethod: upgrade
+    steps:
+      - GET: gke-man
+      - GET: gke-cluster
