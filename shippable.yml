@@ -37,12 +37,3 @@ after_script:
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
   
   
-integrations:    
-  notifications:
-    - integrationName: slack
-      type: slack
-      recipients:
-        - "#mybuilds" 
-      on_start: always
-      on_success: never
-      on_failure: never
